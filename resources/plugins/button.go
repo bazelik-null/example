@@ -23,14 +23,13 @@ func AddBtnSteam(payload interface{}) {
 	}
 
 	btnSteam := widget.NewButtonWithIcon("Steam", theme.ComputerIcon(), func() {
-		var path string
 		if runtime.GOOS == "windows" {
-			path = filepath.Join("C:\\", "Program Files (x86)", "Steam", "steamapps", "common", "ENA Dream BBQ")
+			pkg.Path = filepath.Join("C:\\", "Program Files (x86)", "Steam", "steamapps", "common", "example")
 		} else {
 			home := os.Getenv("HOME")
-			path = filepath.Join(home, ".steam", "root", "steamapps", "common", "ENA Dream BBQ")
+			pkg.Path = filepath.Join(home, ".steam", "root", "steamapps", "common", "example")
 		}
-		pkg.LabelPath.SetText("Выбранный путь: " + path)
+		pkg.LabelPath.SetText("Chosen path: " + pkg.Path)
 	})
 
 	pkg.Container.Add(btnSteam)
