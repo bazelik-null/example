@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "src": "example_file",
+      "dst": "ef"
+    },
+    {
+      "src": "example_file2",
+      "dst": "ef2"
+    }
+  ]
+}

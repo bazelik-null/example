@@ -1,0 +1,17 @@
+#Global
+ButtonClose = "Close"
+#First page
+MainLabel = "Welcome to example of BBQDeploy installer"
+TeamLabel = "  by bazelik-null" # Don't forget 2 spaces at start
+ButtonContinue = "Continue"
+# Second page
+ChoosePathLabel = "Choose any random path."
+ButtonInstall = "Install"
+LabelPath = "Choosed path:"
+ButtonBrowse = "Browse"
+#Integrity error
+IntegrityError = "[FATL]: Resources not found"
+#Injection error
+InjectionError = "[ERROR]: Install failed"
+#Third page
+ThanksLabel = "Thanks for installing."
