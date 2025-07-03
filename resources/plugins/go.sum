@@ -16,6 +16,8 @@ github.com/bazelik-null/BBQDeploy v0.0.0-20250703145204-67183191409b h1:fKzgvfYZ
 github.com/bazelik-null/BBQDeploy v0.0.0-20250703145204-67183191409b/go.mod h1:qQyBBIeCCtsupFYJPZEDeItaQM5ZSB4tKRYkVno5s9M=
 github.com/bazelik-null/BBQDeploy v0.0.0-20250703153127-d3bfee8cc288 h1:7YHP2IblAsjGIQCqVOzYR24cjHNSTQVGTCnlUQuE7gg=
 github.com/bazelik-null/BBQDeploy v0.0.0-20250703153127-d3bfee8cc288/go.mod h1:qQyBBIeCCtsupFYJPZEDeItaQM5ZSB4tKRYkVno5s9M=
+github.com/bazelik-null/BBQDeploy v0.0.0-20250703162937-a36c3224b5af h1:+WmZ0fQfLyPu8WKsWRrHqkDQ1Ed/49TD8HMqDO8pWEI=
+github.com/bazelik-null/BBQDeploy v0.0.0-20250703162937-a36c3224b5af/go.mod h1:qQyBBIeCCtsupFYJPZEDeItaQM5ZSB4tKRYkVno5s9M=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/felixge/fgprof v0.9.3 h1:VvyZxILNuCiUCSXtPtYmmtGvb65nqXh2QFWc0Wpf2/g=

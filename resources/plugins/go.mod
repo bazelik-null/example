@@ -4,7 +4,7 @@ go 1.24.4
 
 require (
 	fyne.io/fyne/v2 v2.6.1
-	github.com/bazelik-null/BBQDeploy v0.0.0-20250703153127-d3bfee8cc288
+	github.com/bazelik-null/BBQDeploy v0.0.0-20250703162937-a36c3224b5af
 )
 
 require (
