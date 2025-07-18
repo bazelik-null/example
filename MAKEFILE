@@ -2,14 +2,18 @@ OUTPUT_WINDOWS=./bin/Installer-Windows.exe
 OUTPUT_LINUX=./bin/Installer-Linux
 OWNER=bazelik-null
 NAME=example
+DEBUG=true
+DISABLE_TERMINAL=
 
 windows:
 	@echo "Building project for Windows..."
 	@cd BBQDeploy && \
 	GOOS=windows go build \
 		-ldflags="-s -w \
+		$(DISABLE_TERMINAL) \
 		-X 'main.repoOwner=$(OWNER)' \
-		-X 'main.repoName=$(NAME)'" \
+		-X 'main.repoName=$(NAME)' \
+		-X 'main.isDebug=$(DEBUG)'" \
 		-o ../$(OUTPUT_WINDOWS) ./src/*.go
 
 linux:
@@ -18,23 +22,8 @@ linux:
 	GOOS=linux go build \
 		-ldflags="-s -w \
 		-X 'main.repoOwner=$(OWNER)' \
-		-X 'main.repoName=$(NAME)'" \
-		-o ../$(OUTPUT_LINUX) ./src/*.go
-
-all:
-	@echo "Building project for Windows..."
-	@cd BBQDeploy && \
-	GOOS=windows go build \
-		-ldflags="-s -w -H=windowsgui \
-		-X 'main.repoOwner=$(OWNER)' \
-		-X 'main.repoName=$(NAME)'" \
-		-o ../$(OUTPUT_WINDOWS) ./src/*.go
-	@echo "Building project for Linux..."
-	@cd BBQDeploy && \
-	GOOS=linux go build \
-		-ldflags="-s -w \
-		-X 'main.repoOwner=$(OWNER)' \
-		-X 'main.repoName=$(NAME)'" \
+		-X 'main.repoName=$(NAME)' \
+        -X 'main.isDebug=$(DEBUG)'" \
 		-o ../$(OUTPUT_LINUX) ./src/*.go
 
 clean:
@@ -44,7 +33,7 @@ clean:
 help:
 	@echo "Use 'make windows' to build the Windows version."
 	@echo "Use 'make linux' to build the Linux version."
-	@echo "Use 'make all' to build both versions."
 	@echo "Use 'make clean' to clean up."
 
-.PHONY: all windows linux clean help
+.PHONY: windows linux clean help
+
