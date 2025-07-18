@@ -1,9 +1,15 @@
 OUTPUT_WINDOWS=./bin/Installer-Windows.exe
 OUTPUT_LINUX=./bin/Installer-Linux
+# https://github.com/OWNER/NAME
 OWNER=bazelik-null
 NAME=example
+# If set to false will download files. If set to true will use local resources folder
 DEBUG=false
+# Set to blank to enable cmd output
 DISABLE_TERMINAL=
+
+# Add "cd BBQDeploy && \" before after second "@" if you are using installer in submodule
+# Use "../$(OUTPUT_LINUX)" if you are using installer in submodule
 
 windows:
 	@echo "Building project for Windows..."
@@ -36,4 +42,3 @@ help:
 	@echo "Use 'make clean' to clean up."
 
 .PHONY: windows linux clean help
-
