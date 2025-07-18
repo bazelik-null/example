@@ -2,7 +2,7 @@ OUTPUT_WINDOWS=./bin/Installer-Windows.exe
 OUTPUT_LINUX=./bin/Installer-Linux
 OWNER=bazelik-null
 NAME=example
-DEBUG=true
+DEBUG=false
 DISABLE_TERMINAL=
 
 windows:
